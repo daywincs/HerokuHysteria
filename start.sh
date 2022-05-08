@@ -16,7 +16,9 @@ cat <<EOF > /etc/hysteria/config.json
   "listen": ":9527",
   "cert": "/etc/hysteria/ca.crt",
   "key": "/etc/hysteria/ca.key",
-  "obfs": "password"
+  "obfs": "password",
+  "up_mbps": 100,
+  "down_mbps": 100
 }
 EOF
 
