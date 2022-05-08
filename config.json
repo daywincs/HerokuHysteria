@@ -3,6 +3,6 @@
   "cert": "/etc/hysteria/ca.crt",
   "key": "/etc/hysteria/ca.key",
   "obfs": "password",
-  "up_mbps": 100,
-  "down_mbps": 100
+  "up_mbps": 10,
+  "down_mbps": 50
 }
