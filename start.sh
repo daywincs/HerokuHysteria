@@ -22,4 +22,4 @@ cat <<EOF > /etc/hysteria/config.json
 }
 EOF
 
-run /etc/hysteria/hysteria-linux-amd64 -c config.json server
+RUN /etc/hysteria/hysteria-linux-amd64 -c config.json server
