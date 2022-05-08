@@ -2,7 +2,7 @@
 export LANG=en_US.UTF-8
 
 mkdir -p /etc/hysteria
-wget -q -O /etc/hysteria/hysteria-linux-amd64 --no-check-certificate https://github.com/daywincs/HerokuHysteria/blob/main/hysteria-linux-amd64
+wget -q -O /etc/hysteria/hysteria --no-check-certificate https://github.com/daywincs/HerokuHysteria/blob/main/hysteria-linux-amd64
 wget -q -O /etc/hysteria/ca.crt --no-check-certificate https://github.com/daywincs/HerokuHysteria/blob/main/ca.crt
 wget -q -O /etc/hysteria/ca.key --no-check-certificate https://github.com/daywincs/HerokuHysteria/blob/main/ca.key
 
@@ -20,4 +20,4 @@ cat <<EOF > /etc/hysteria/config.json
 }
 EOF
 
-./etc/hysteria/hysteria-linux-amd64 -c config.json server
+./etc/hysteria/hysteria -c config.json server
