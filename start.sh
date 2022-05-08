@@ -6,4 +6,4 @@ wget -q -O /etc/hysteria/ca.crt --no-check-certificate https://github.com/daywin
 wget -q -O /etc/hysteria/ca.key --no-check-certificate https://github.com/daywincs/HerokuHysteria/blob/main/ca.key
 wget -q -O /etc/hysteria/config.json --no-check-certificate https://github.com/daywincs/HerokuHysteria/blob/main/config.json
 chmod 755 /etc/hysteria/hysteria
-run /etc/hysteria/hysteria -c config.json server
+./etc/hysteria/hysteria -c config.json server
